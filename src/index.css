@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    :root {
+        --background: 40 33% 98%;
+        /* Warm off-white */
+        --foreground: 20 14% 16%;
+        --primary: 0 78% 50%;
+        /* #D81A1A basically */
+        --primary-foreground: 0 0% 100%;
+        --accent: 24 85% 65%;
+        /* Oaxaca clay */
+        --accent-foreground: 0 0% 100%;
+    }
+
+    body {
+        background-color: hsl(var(--background));
+        color: hsl(var(--foreground));
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    }
+}
+
+/* Warm, gentle greca texture for backgrounds */
+.bg-grecas {
+    background-image: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M20 20.5V18H0v-2h20v-2H0v-2h20v-2H0V8h22v12.5h-2zM0 20h2v2H0v-2zm0 4h2v2H0v-2zm0 4h2v2H0v-2zm0 4h2v2H0v-2zm22-12H4v-2h18v2zm0-4H4v-2h18v2zm0-4H4V6h18v2z' fill='%23d81a1a' fill-opacity='0.03' fill-rule='evenodd'/%3E%3C/svg%3E");
+}
